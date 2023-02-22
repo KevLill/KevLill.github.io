@@ -1,0 +1,1294 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #303030;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    margin: auto;
+}
+
+/* ESILEHT START */
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    background: #CACACA;
+    box-shadow: 0 5px 15px rgba(0,0,0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    color: #303030;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #303030;
+    border-radius: 40px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s;
+}
+
+.navbar a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    position: relative;
+    letter-spacing: 0.5px;
+}
+
+#navbar li a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+#navbar li a:hover {
+    color: #088178;
+}
+
+#navbar li a:hover::after {
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.ostanuud {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 36px 19px;
+    gap: 10px;
+    position: relative;
+    width: 316px;
+    height: 125px;
+    background: #CACACA;
+    border-radius: 50px;
+    top: 220px;
+    left: 800px;
+}
+.ostanuudtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 765px;
+    left: 840px;
+    cursor: pointer;
+    background-color: transparent;
+    outline:none;
+    border:none;
+}
+
+.õfflamme {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 160px;
+    font-weight: 800;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 40vh;
+    opacity: 0;
+    animation: fade-in 3s;
+    animation-fill-mode: forwards;
+    color: #ffffff
+}
+
+.kasitoo {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 72px;
+    font-weight: 400;
+    position: absolute;
+    left: 330px;
+    top:430px;
+    opacity: 0;
+    animation: fade-in 1s ease-in 1s forwards;
+    color: #ffffff
+}
+
+@keyframes fade-in {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+/* ESILEHT END */
+
+/* POPULAARSED TOOTED START */
+
+.populaarsedtootedtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    position: absolute;
+    top: 1000px;
+    left: 50px;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px #000000
+}
+
+
+.poptoode1pic {
+    position: absolute;
+    top: 1200px;
+    left: 350px;
+    width: 400px;
+    height: 450px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+.poptoode1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}   
+.poptoode1hind {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.poptoode2pic {
+    position: absolute;
+    top: 1200px;
+    left: 1100px;
+    width: 400px;
+    height: 450px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+.poptoode2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+.poptoode2hind {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.klaaspurgis1 {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    top: 1680px;
+    left: 346px;
+}
+
+.klaaspurgis2 {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    top: 1745px;
+    left: 420px;
+}
+
+.mull1 {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    top: 1680px;
+    left: 1185px;
+}
+
+.mull2 {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    top: 1745px;
+    left: 1170px;
+}
+
+/* POPULAARSED TOOTED END */
+
+
+/* KÜÜNLA TÜÜBID START */
+
+.ktyybid {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    position: absolute;
+    color: #ffffff;
+    top: 2000px;
+    left: 50px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.ktyyp1pic {
+    position: absolute;
+    top: 2200px;
+    left: 350px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.ktyyp1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ktyyp1hind {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.ktyyp2pic {
+    position: absolute;
+    top: 2200px;
+    left: 1100px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.ktyyp2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ktyyp2hind {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.ktyyp3pic {
+    position: absolute;
+    top: 2900px;
+    left: 350px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.ktyyp3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ktyyp3hind {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.ktyyp4pic {
+    position: absolute;
+    top: 2900px;
+    left: 1100px;
+    border: 10px solid #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
+
+.klaaspurk {
+    font-family: 'Inter';
+    color: #CACACA;
+    left: 347px;
+    top: 2730px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000
+}
+
+.süda {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    top: 3430px;
+    left: 305px;
+    text-shadow: 2px 2px 2px #000000
+}
+
+.lill {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    top: 2730px;
+    left: 1097px;
+    text-shadow: 2px 2px 2px #000000
+}
+
+.mull {
+    font-family: 'Inter';
+    color: #CACACA;
+    position: absolute;
+    top: 3430px;
+    left: 1180px;
+    text-shadow: 2px 2px 2px #000000
+}
+
+.klaashind {
+    font-family: 'Inter';
+    color: #CACACA;
+    left: 525px;
+    top: 2800px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 45px;
+}
+
+.lillehind {
+    font-family: 'Inter';
+    color: #CACACA;
+    left: 1280px;
+    top: 2800px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 45px;
+}
+
+.sudamehind {
+    font-family: 'Inter';
+    color: #CACACA;
+    left: 525px;
+    top: 3500px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 45px;
+}
+
+.mullihind {
+    font-family: 'Inter';
+    color: #CACACA;
+    left: 1280px;
+    top: 3500px;
+    position: absolute;
+    text-shadow: 2px 2px 2px #000000;
+    font-size: 45px;
+}
+
+/* KÜÜNLA TÜÜBID END */
+
+
+/* LÕHNAD JA VÄRVID START */
+
+.klohnad {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    position: absolute;
+    color: #ffffff;
+    left: 155px;
+    top: 3675px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.klohnad11 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    position: absolute;
+    color: #ffffff;
+    left: 130px;
+    top: 3730px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.klohnad2 {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 50px;
+    top: 3865px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.klohnad21 {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 55px;
+    top: 3910px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.klohnad22 {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 250px;
+    top: 3960px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.klohnad3 {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 210px;
+    top: 4085px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.varvidtext {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 910px;
+    top: 3655px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+.lohnadtext {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 40px;
+    left: 1495px;
+    top: 3655px;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+@keyframes float2 {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-5px) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+}
+
+.varvhall {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 845px;
+    top: 4050px;
+    transform:  rotate(-15deg);
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvkollane {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 825px;
+    top: 3870px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvlilla {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1040px;
+    top: 4050px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvmust {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1035px;
+    top: 3990px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvneoonroosa {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 995px;
+    top: 3810px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvoranz{
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 830px;
+    top: 3990px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvpunane {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1025px;
+    top: 3870px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvroheline {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 818px;
+    top: 3810px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvroosa {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 830px;
+    top: 3930px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvsinine {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1030px;
+    top: 3930px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.varvvalge {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 930px;
+    top: 4110px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+
+/* LOHNAD */
+
+.apelsinlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1730px;
+    top: 3960px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.kaneellohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1730px;
+    top: 4080px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.ounkaneellohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1490px;
+    top: 3750px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.granaatounrabarberlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1410px;
+    top: 3810px; 
+    animation: float2 4s ease-in-out infinite;
+}
+
+.kirsslohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1740px;
+    top: 3840px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.kookoslohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1288px;
+    top: 4085px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.lavendellohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1495px;
+    top: 4170px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.piparmuntlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1490px;
+    top: 4110px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.piparmuntshokolaadlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1420px;
+    top: 3870px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.rooslohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1295px;
+    top: 3840px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.sidrunlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1290px;
+    top: 3960px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.vaarikasvaniljelohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1460px;
+    top: 3930px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.mandariinproseccolohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1420px;
+    top: 3990px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.vurtapelsinlohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1450px;
+    top: 4050px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+.vaniljelohn {
+    font-family: 'Inter';
+    position: absolute;
+    font-style: normal;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 30px;
+    left: 1450px;
+    top: 4230px;
+    animation: float2 4s ease-in-out infinite;
+}
+
+
+.vaata {
+    font-family: 'Inter';
+    color: #CACACA;
+}
+
+
+
+/* LÕHNAD JA VÄRVID END */
+
+
+/* TELLIMUSE ESITAMINE START */
+.esitaminebox {
+    position:absolute;
+    width:1500px;
+    height:900px;
+    left:190px;
+    top:4300px;
+    background:#CACACA;
+    border-radius:40px;
+}
+
+.oledmoelnudtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 47px;
+    position: absolute;
+    left: 400px;
+    top: 4325px;
+}
+
+.jargijargmiseidtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 47px;
+    position: absolute;
+    left: 425px;
+    top: 4390px;
+}
+
+.nr1text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 254px;
+    top: 4500px;
+}
+
+.nr2text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 250px;
+    top: 4550px;
+}
+
+.nr3text {
+   font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 250px;
+    top: 4600px;
+}
+
+.atext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4655px;
+}
+
+.btext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4705px;
+}
+
+.ctext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4755px;
+}
+
+.dtext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4805px;
+}
+
+.etext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4855px;
+}
+
+.tellimusetext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 250px;
+    top: 4915px;
+}
+
+.katte1text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 4965px;
+}
+
+.katte2text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 5015px;
+}
+
+.katte3text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 5065px;
+}
+
+.katte4text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    position: absolute;
+    left: 375px;
+    top: 5115px;
+}
+
+.flammelogo {
+    position: absolute;
+    left: 1525px;
+    top: 5050px;
+}
+
+/* TELLIMUSE ESITAMINE END */
+
+
+/* INFOSEKTSIOON START */
+
+.meistlahemalttext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    position: absolute;
+    color: #ffffff;
+    left: 170px;
+    top: 5350px;
+    text-shadow: 2px 2px 3px #000000
+}
+
+.ml1text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5510px;
+    left: 130px;
+    z-index: 1;
+}
+
+.ml2text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5557px;
+    left: 120px;
+    z-index: 1;
+}
+
+.ml3text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5604px;
+    left: 120px;
+    z-index: 1;
+}
+
+.ml4text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5651px;
+    left: 135px;
+    z-index: 1;
+}
+
+.ml5text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5698px;
+    left: 145px;
+    z-index: 1;
+}
+
+.ml6text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5745px;
+    left: 138px;
+    z-index: 1;
+}
+
+.ml7text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5792px;
+    left: 145px;
+    z-index: 1;
+}
+
+.ml8text {
+    font-family: 'Inter';
+    font-style: normal;
+    position: absolute;
+    font-weight: 600;
+    font-size: 28px;
+    top: 5839px;
+    left: 170px;
+    z-index: 1;
+}
+
+.kkktext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    position: absolute;
+    color: #ffffff;
+    left: 1300px;
+    top: 5480px;
+    text-shadow: 2px 2px 3px #000000;
+    display: inline-block;
+    cursor: pointer;
+    background-color: transparent;
+    outline:none;
+    border:none;
+}
+
+
+.kkktext::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 5px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right;
+}
+
+.kkktext:hover::before {
+    transform-origin: left;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.kontakttext {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 80px;
+    position: absolute;
+    color: #ffffff;
+    left: 1300px;
+    top: 5580px;
+    text-shadow: 2px 2px 3px #000000;
+    cursor: pointer;
+    background-color: transparent;
+    outline:none;
+    border:none;
+}
+
+.kontakttext::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 5px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    visibility: visible;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+    transform-origin: right;
+}
+
+.kontakttext:hover::before {
+    transform-origin: left;
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.infosektsioonbox {
+    position:absolute;
+    width:800px;
+    height:385px;
+    left:100px;
+    top:5500px;
+    background:#CACACA;
+    border-radius:40px;
+    z-index: 0;
+}
+
+.valgeiglogo {
+    height:auto;
+    width: 8%;
+    position: absolute;
+    top:5700px;
+    left:1275px;
+}
+
+/* INFOSEKTSIOON END */
+
